@@ -1,0 +1,17 @@
+def standaardtarief(afstandKM):
+    input(afstandKM)
+    if afstandKM > 50:
+        standaardtarief = standaardtarief(15 + (afstandKM * 0.80))
+    else: standaardtarief(afstandKM * 0.80)
+
+def ritprijs(leeftijd, weekendrit, afstandKM):
+    standaardprijs = standaardtarief
+    if weekendrit == True:
+        if leeftijd < 65 > 12:
+            ritprijs = ritprijs(standaardprijs * 0.60)
+        else: ritprijs = ritprijs(standaardprijs * 0.65)
+    else:
+        if leeftijd < 65 > 12:
+            ritprijs = ritprijs(standaardprijs)
+        else: ritprijs = ritprijs(standaardprijs * 0.70)
+print (ritprijs)
