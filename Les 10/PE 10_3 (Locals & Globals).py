@@ -1,13 +1,8 @@
-x = 2
-y = 5
-
-def fun():
-  y = 3
-  global x
-  x = 1
-  print(x*y, end = ' ')
-  return x*y
-
-
-x = fun()
-print(x*y, end = ' ')
+A: 3
+B: 3 3
+C: 3 10
+D: a:9 a:0
+E: 0
+F: a:5 a:10
+G: 6
+H: 8
